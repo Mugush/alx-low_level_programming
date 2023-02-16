@@ -1,6 +1,11 @@
 #include <stdio.h>
-int main (void) 
+/**
+ *main - print a file using puts
+ *
+ *Return:0
+ */
+int main(void)
 {
-	puts ("Programming is like building a multilingual puzzle\n");
-		return 0;
+	puts("\"Programming is like building a multilingual puzzle\n");
+		return (0);
 }
