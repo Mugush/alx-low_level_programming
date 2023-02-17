@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
  *Task 8.UNIX solution
  *
