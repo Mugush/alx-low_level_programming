@@ -3,7 +3,7 @@
 #include <time.h>
 /* prints the last digit */
 
-/* betty style doc for function main goes there */
+/* main prints out the last digit */
 int main(void)
 {
 	int n;
