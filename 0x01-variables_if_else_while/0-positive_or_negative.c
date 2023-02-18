@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Assign a random number to a variable 
- * 
+ * main - Random variable assgined positive or negative
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
