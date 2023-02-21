@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * main -prints _putchar
+ * main -prints _putchar followed by new line
+ * print _putchar 
  * Date:21/02/2023
  * Return : Always 0 (success)
  */
@@ -15,5 +16,5 @@ int main(void)
 	 _putchar('a');
 	 _putchar('r');
 	 _putchar('\n');
-	return(0);
+	return (0);
 }
