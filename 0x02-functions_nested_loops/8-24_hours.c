@@ -2,7 +2,7 @@
 
 /**
  * jack_bauer - print every minute of the day
- * Description: print every minute with jack_bauer
+ * Description: print every minute of  jack_bauer
  * Return: Nothing
  */
 void jack_bauer(void)
@@ -18,7 +18,7 @@ void jack_bauer(void)
 			_putchar('0' + hour / 10);
 			_putchar('0' + hour % 10);
 
-			_putchar(' : ');
+			_putchar(':');
 			_putchar('0' + minute % 10);
 
 			_putchar('\n');
