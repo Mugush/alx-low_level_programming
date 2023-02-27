@@ -1,7 +1,5 @@
 #include "main.h"
 
-int _isdigit(int c);
-
 /**
  * _isdigit - function definition
  * Description: test if c is a digit
