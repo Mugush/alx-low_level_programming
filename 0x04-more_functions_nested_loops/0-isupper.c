@@ -1,19 +1,10 @@
 #include "main.h"
 
 /**
- * _isupper - function declaration
+ * _isupper - checks for uppercase character
  * Description: check case of c
- * @c: character to test
- * Return: 1 for true and 0 for false
- */
-
-int _isupper(int c);
-
-/**
- * _isupper - function definition
- * Description: tests case of c
- * @c: character to test
- * Return: 1 if upper 0 if not upper
+ * @c: variable text
+ * Return: 0
  */
 
 int _isupper(int c)
