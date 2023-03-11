@@ -6,9 +6,10 @@
  *
  * Return: 0 on success
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	puts(argv [argc -1]);
+	puts(argv[argc - 1]);
+	puts("%d"), ('\n');
 
 	return (0);
 }
