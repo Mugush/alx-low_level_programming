@@ -3,7 +3,7 @@
 #include "function_pointers.h"
 
 /**
- *print-name - print a name
+ *print_name - print a name
  *@name: name to print
  *@f: pointer to the printing function that takes a char pointer as an argument
  * Return: void
