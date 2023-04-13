@@ -3,33 +3,36 @@
  *Read_text file - function that reads and prints to STDOUT
  *
  * @filename: the file being read
- * @Letters: number of letters to read and print
- * 
- * Return: (0) if file can't be opened or read;filename is Null; if write fails.
+ * @letters: number of letters to read and print
+ *
+ * Return: (0)if file can't be opened or read, filename is Null, write fails.
  */
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *filename, size_t letters)
 
-char *buff;
-ssize_t fp,fread,fclose;
+	char *buff;
+	ssize_t fp, fread, fclose;
 
-	fp = fopen(filename,"r");
-	if( fp == NULL )
+	fp = fopen(filename, "r");
+	if (fp == NULL)
 	{
 		return (0);
 	}
 	buff = mallof(sizeof(char) * letters);
 
 	do {
-	fread =(fp, buff, letters);
+	fread = (fp, buff, letters);
 	}
-	while (!feof(fp));
+	if fwrite = (STDOUT_FILENO, buff, fread);
+	printf("Contents to file written successfully !\n");
+	}
+	else
+	printf(!feof(fp));
 	{
 	fclose(fp);
-		return 0;
+		return (0);
 	}
-	
 	free(buff);
-	buff = malloc(sizeof(char) *letters +1)
+	close(fp);
 
-
-
+	return (fwrite);
+	}
