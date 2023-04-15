@@ -10,7 +10,8 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 
 	char *buff;
-	ssize_t fp, fread, fclose;
+	ssize_t fread, fwrite;
+	int fp;
 
 	fp = fopen(filename, "r");
 	if (fp == NULL)
@@ -18,21 +19,20 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	buff = mallof(sizeof(char) * letters);
+if (!buff)
+	return (0);
 
-	do {
-	fread = (fp, buff, letters);
-	}
-	if fwrite = (STDOUT_FILENO, buff, fread);
-	printf("Contents to file written successfully !\n");
-	}
-	else
+	fp = fopen(filename, O_RDONLY);
+	fread = read(fp, buff, letters);
+	fwrite = write(STDOUT_FILENO, buff, fread);
+	if (fp == -1 || fread == -1 || fwrite ==-1 || fwrite != fread)
+{	free(buff);
+	return (0);
+}
+	
 	printf(!feof(fp));
-	{
 	fclose(fp);
-		return (0);
-	}
-	free(buff);
-	close(fp);
-
 	return (fwrite);
-	}
+	
+	
+}
