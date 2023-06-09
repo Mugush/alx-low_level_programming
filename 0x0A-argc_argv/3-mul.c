@@ -5,19 +5,18 @@
 *@argv: the argument vector
 *Return: 0 on success, 1 faulire to receive two arguments.
 */
-int main(void)
+int main(int argc, char *argv[])
 {
-	int num1, num2, result;
+	if (argc != 3)
+	{
+		printf("%s <numb1> <numb2>/n", argv[0]);
+		return (1);
+	}
 
-	printf("num1");
-	scanf("%d", &num1);
+	int numb1 = atoi(argv[1]);
+	int numb2 = atoi(argv[2]);
+	int result = numb1 * numb2;
 
-	printf("num2");
-	scanf("%d", &num2);
-
-	result = num1 * num2;
-
-	printf("%d\n", result);
-
+	printf("%d\n" numb1, numb2, result);
 	return (0);
 }
