@@ -1,7 +1,7 @@
 #include "main.h"
-#include <stdio.h>
-/*
- * _strlen_recursion - A function that returns the length of a string.
+
+/**
+ * _strlen_recursion - Function that returns the length of a string.
  * @s: The string to calculate the length of.
  *
  * Return: The length of the string.
