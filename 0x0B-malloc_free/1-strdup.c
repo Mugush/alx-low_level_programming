@@ -14,18 +14,19 @@ char *_strdup(char *str)
 	char *space;
 	char *str_cpy;
 
+	if (str == NULL)
+		return (NULL);
+
 	str_cpy = str;
 
 	for (i = 0; str_cpy[i] != '\0'; i++)
-	{
-		str_cpy++;
-	}
+		;		
 	space = malloc(sizeof(char) * (i + 1));
 
 	if (space == NULL)
 		return (NULL);
 	for (i = 0; str[i]; i++)
-		space[i] = str[i];
+	space[i] = str[i];
 	space[i] = '\0';
 	return (space);
 }
