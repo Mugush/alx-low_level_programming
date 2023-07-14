@@ -3,20 +3,20 @@
 #include <stdlib.h>
 
 /**
- *Description - A function that allocates memory using malloc.
- *@ptr - Returns a pointer to the allocated memory
- *Return: 0 on success 98 if fails
+ * Malloc_checked - Allocates memory using malloc.
+ * Description - A function that allocates memory using malloc.
+ *@b - size of the memory block to allocate.
+ *Return: a pointer to allocated memory block.
+ *Exit with status value 98 if malloc fails.
  *Date: 7/13/23
  */
 void *malloc_checked(unsigned int b)
 {
-    void* ptr = malloc(b);
-    if (ptr == NULL) {
-	_putchar(stderr\n")
-	exit(98);}
+	void *ptr;
 
-    return ptr;
+	ptr = malloc(b);
+
+	if (ptr == NULL)
+		exit(98);
+	return (ptr);
 }
-
- 
-
