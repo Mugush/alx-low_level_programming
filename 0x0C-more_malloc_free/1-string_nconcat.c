@@ -4,8 +4,8 @@
 
 /**
  * string_nconcat - Concatenates two strings up to n bytes.
- * @str1: First string.
- * @str2: Second string.
+ * @s1: First string.
+ * @s2: Second string.
  * @n: Number of bytes to concatenate.
  *
  * Return: Pointer to the concatenated string, or NULL on failure.
@@ -15,17 +15,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int j, len1, len2;
 	char *concat_str;
 
-	if (str1 == NULL)
-		str1 = "";
-	if (str2 == NULL)
-		str2 = "";
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
 	len1 = 0;
 	len2 = 0;
 
-	while (str1[len1] != '\0')
+	while (s1[len1] != '\0')
 		len1++;
-	while (str2[len2] != '\0')
+	while (s2[len2] != '\0')
 		len2++;
 
 	if (n >= len2)
@@ -37,10 +37,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 
 	for (j = 0; j < len1; j++)
-		concat_str[j] = str1[j];
+		concat_str[j] = s1[j];
 
 	for (j = 0; j < n; j++)
-		concat_str[j + len1] = str2[j];
+		concat_str[j + len1] = s2[j];
 
 	concat_str[j + len1] = '\0';
 
