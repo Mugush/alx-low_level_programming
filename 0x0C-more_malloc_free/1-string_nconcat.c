@@ -10,9 +10,9 @@
  *
  * Return: Pointer to the concatenated string, or NULL on failure.
  */
-char *string_nconcat(char *str1, char *str2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, len1, len2;
+	unsigned int j, len1, len2;
 	char *concat_str;
 
 	if (str1 == NULL)
@@ -36,13 +36,13 @@ char *string_nconcat(char *str1, char *str2, unsigned int n)
 	if (concat_str == NULL)
 		return (NULL);
 
-	for (i = 0; i < len1; i++)
-		concat_str[i] = str1[i];
+	for (j = 0; j < len1; j++)
+		concat_str[j] = str1[j];
 
-	for (i = 0; i < n; i++)
-		concat_str[i + len1] = str2[i];
+	for (j = 0; j < n; j++)
+		concat_str[j + len1] = str2[j];
 
-	concat_str[i + len1] = '\0';
+	concat_str[j + len1] = '\0';
 
 	return (concat_str);
 }
