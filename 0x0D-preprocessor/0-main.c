@@ -1,6 +1,5 @@
-#include "0-object_like_macro.h"
 #include <stdio.h>
-
+#include "0-object_like_macro.h"
 /**
  * main - check the code
  *
@@ -9,9 +8,9 @@
 int main(void)
 {
 	int s;
-
 	s = 98 + SIZE;
-	printf("Result:"%d\n", s);
+
+	printf("Result: %d\n", s);
 	
 	return (0);
 }
