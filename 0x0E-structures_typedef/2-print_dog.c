@@ -5,11 +5,11 @@
  *print_dog - function that prints a struct dog.
  *@d: Struct dog to print
  *
- * Date: 19/7/23
+ * Date: 2023-07-19
  */
 void print_dog(struct dog *d)
 {
-	if (d == NUL)
+	if (d == NULL)
 		return;
 
 	if (d->name == NULL)
