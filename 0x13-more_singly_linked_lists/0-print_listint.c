@@ -54,7 +54,8 @@ int main(void)
 	node2->next = node3;
 	node3->next = NULL;
 
-	size_t count = print_listint(node1);
+	size_t count;
+	count = print_listint(node1);
 	printf("Number of nodes: %lu\n", count);
 
 	free(node1);
