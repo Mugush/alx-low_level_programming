@@ -3,7 +3,6 @@
  * print_binary - This function prints binary number
  * @n: unsigned int parameter
  * Return: void
- * Date: 10-04-2023
  */
 void print_binary(unsigned long int n)
 {
