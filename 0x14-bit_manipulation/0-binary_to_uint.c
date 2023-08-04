@@ -3,8 +3,7 @@
  * binary_to_uint - This function convert binary to unsigned int
  * @b: binary number to convert
  * Return: Unsigned int
- * Date: 10-04-2023
- */
+  */
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int uint = 0;
